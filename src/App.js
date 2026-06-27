@@ -53,6 +53,8 @@ export default function App() {
   const [fading, setFading] = useState(false);
   const [paletteIdx] = useState(0);
   const [liked, setLiked] = useState(false);
+  const [copied, setCopied] = useState(false);
+
 
   const palette = PALETTES[paletteIdx];
   const quote = QUOTES[idx];
@@ -68,6 +70,8 @@ export default function App() {
 
   const copyQuote = () => {
     navigator.clipboard.writeText(`"${quote.text}" — ${quote.author}`);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -96,7 +100,7 @@ export default function App() {
             title="Like"
             style={{ color: liked ? '#E07070' : '#aaa' }}
           >
-            {liked ? '♥' : '♡'}
+            {liked ? '❤️' : '🤍'}
           </button>
 
           <button
@@ -111,14 +115,14 @@ export default function App() {
             className="icon-btn"
             onClick={copyQuote}
             title="Copy"
-            style={{ color: '#aaa' }}
+            style={{ color: copied ? palette.accent : '#aaa', fontSize: copied ? '0.7rem' : '1.1rem', border: copied ? 'none' : '1.5px solid #eee' }}
           >
-            ⎘
+            {copied ? 'Copied!' : '📋'}
           </button>
         </div>
       </div>
 
-      <p className="footer">CodeAlpha Internship · Task 2</p>
+      <p className="footer">Made by Areesha Yaseen</p>
     </div>
   );
 }
