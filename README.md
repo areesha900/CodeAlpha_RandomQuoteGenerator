@@ -6,7 +6,7 @@ A React-based random quote generator built as part of the **CodeAlpha App Develo
 
 ## Features
 
-- **🎲 Random Quotes** — Displays a new quote on every click, never repeating the previous one.
+- **🎲 Random Quotes** — Displays a new quote on every click, from a set of 50 amazing quotes.
 - **🤍 Like**          — Mark your favourite quotes.
 - **📋 Copy**          — Copy any quote to clipboard instantly.
 - **✨ Animations**    — Smooth fade transitions between quotes.
@@ -16,7 +16,7 @@ A React-based random quote generator built as part of the **CodeAlpha App Develo
 
 ## Screenshots
 
-<img width="959" height="425" alt="Screenshot 2026-06-27 180255" src="https://github.com/user-attachments/assets/140112d8-8e11-4517-9a10-2db6ac97c1f5" />
+<img width="959" height="434" alt="Screenshot 2026-06-28 110519" src="https://github.com/user-attachments/assets/167ca7ea-8bd5-4d12-8342-b219fcebb89f" />
 
 ---
 
