@@ -1,6 +1,6 @@
 # 💬 Random Quote Generator
 
-A React-based random quote generator built as part of the **CodeAlpha App Development Internship** (task 2).
+A React-based random quote generator built as part of the **CodeAlpha App Development Internship** (Task 2).
 
 ---
 
@@ -36,4 +36,3 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - React 18
 - CSS (no external UI library)
 - Google Fonts (Playfair Display + Inter)
-
